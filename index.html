@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Calculadora</title>
+    <link rel="stylesheet" href='estilos.css'>
+</head>
+<body>
+
+    <h1>Minha Calculadora<span>&reg;</span></h1>
+    
+    <main class="calculadora">
+        <div class="display">
+            <button type="button" class="limpar" onclick="limparTudo()">Limpar</button>
+            <input value="" type="text" name="display" id="display" disabled>
+        </div>
+
+        <div class="botoes">
+            <section class="primeira">
+                <button class="botao" value="7" onclick="mostrarDisplay(7)">7</button>
+                <button class="botao" value="8" onclick="mostrarDisplay(8)">8</button>
+                <button class="botao" value="9" onclick="mostrarDisplay(9)">9</button>
+                <button class="botao" value="+" onclick="mostrarDisplay('+')">+</button>
+            </section>
+
+            <section class="segunda">
+                <button class="botao" value="4" onclick="mostrarDisplay(4)">4</button>
+                <button class="botao" value="5" onclick="mostrarDisplay(5)">5</button>
+                <button class="botao" value="6" onclick="mostrarDisplay(6)">6</button>
+                <button class="botao" value="-" onclick="mostrarDisplay('-')">-</button>
+            </section>
+
+            <section class="terceira">
+                <button class="botao" value="1" onclick="mostrarDisplay(1)">1</button>
+                <button class="botao" value="2" onclick="mostrarDisplay(2)">2</button>
+                <button class="botao" value="3" onclick="mostrarDisplay(3)">3</button>
+                <button class="botao" value="*" onclick="mostrarDisplay('*')">x</button>
+            </section>
+
+            <section class="quarta">
+                <button class="botao" value="0" onclick="mostrarDisplay(0)">0</button>
+                <button class="botao" value="." onclick="mostrarDisplay('.')">.</button>
+                <button class="botao" value="/" onclick="mostrarDisplay('/')">/</button>
+                <button class="igual" value="=" onclick="resultado()">=</button>
+            </section>
+        </div>
+    </main>
+
+    <footer class="rodape">Criado por Vitor Bittencourt</footer>
+
+<script type="text/javascript" src="calculadora.js"></script>
+</body>
+</html>
